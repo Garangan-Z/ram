@@ -3,7 +3,7 @@
 import requests,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from ram import BeautifulSoup as par
+from import BeautifulSoup as par
 from datetime import date
 from datetime import datetime
 from urllib.parse import quote
