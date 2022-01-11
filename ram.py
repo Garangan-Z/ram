@@ -1,6 +1,6 @@
 #Recode Memeg
 #Create By Angga-XD
-import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
+import requests,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
 from ram import BeautifulSoup as par
