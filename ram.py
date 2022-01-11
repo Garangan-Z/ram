@@ -3,7 +3,6 @@
 import requests,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from import BeautifulSoup as par
 from datetime import date
 from datetime import datetime
 from urllib.parse import quote
@@ -80,7 +79,6 @@ def menu_log():
             xd.close()
             print('%s║'%(O))
             jalan('%s╚══[%s!%s] %sLogin Successful'%(O,P,O,P))
-            #exit(BeautifulSoup.main())
             menu()
         except (KeyError,IOError):
             print('%s║'%(O))
@@ -115,7 +113,6 @@ def menu_log():
             xd.close()
             print('%s║'%(O))
             jalan('%s╚══[%s!%s] %sLogin Successful'%(O,P,O,P))
-            #exit(BeautifulSoup.main())
             menu()
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
