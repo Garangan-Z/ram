@@ -154,10 +154,10 @@ def __menu__():
 	print(_raka_banner_)
 	print("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account : " +name)
 	print(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir  : "+birthday)
-	jeeck("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
+	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
 	print(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
 	print(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
-	jeeck(" \033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
+	raka(" \033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
 	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
 	if _naruto_kurama_ == "":
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
