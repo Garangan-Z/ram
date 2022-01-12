@@ -149,7 +149,7 @@ def __menu__():
                 __raka_sayang_amanda__()
         try:
                 y = requests.get('https://graph.facebook.com/me?access_token='+token)
-                x = json.loads(p.text)
+                x = json.loads(y.text)
                 name = x['name']
 		birthday = x['birthday']
         except KeyError:
