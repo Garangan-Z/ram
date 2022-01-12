@@ -198,7 +198,7 @@ def __menu__():
 	else:
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
 	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : \033[0;36m"+str(len(id)))
-	raka(" \n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Mainkan Mode Pesawat 1 Detik ..!))
+	raka(" \n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Mainkan Mode Pesawat 1 Detik ..!")
 	print(' ')
 	def main(arg):
 		global ok,cp,ua, loop
