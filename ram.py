@@ -46,9 +46,9 @@ def __hasil_ok_cp__():
 		exit(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Wronk input")
 # Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
-komenredem = random.choice(['Bang Lu Ngntd!', 'Bang Lu Cakep Tapi Sayang Kaya Kntl', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
-komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
-kartu2d = random.choice(["pacaran kok sama 2D\nsampah bat lu bang","waduh sampah lu bang","wibu hengker tezy","judul anime apa bang?","bjir kawai cok","bang lapor gua habis coli","neper surentod","kentod berkentod :v"])
+komenredem = random.choice(['Bang Lu krend bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu ?', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
+komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang punya pacar cuma satu wkwk ?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
+kartu2d = random.choice(["poko ny Abang krend\nsampah bat lu bang","waduh sampah lu bang","wibu hengker ni bang","judul anime apa bang?","bjir kawai bang","bang lapor gua habis coli","mantap bang","salam buat kluarga bang :v"])
 def __komen_token__():
     try:
         token = open('login.txt', 'r').read()
@@ -82,8 +82,8 @@ def __komen_token__():
 def __naruto_X_nano__():
 	os.system('clear')
 	print(_jeeck_banner_)
-	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Login Via Token ")
-	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Cara Mengambil Token")
+	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Login Menggunakan Token Facebook")
+	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Cara Mengambil Token Facebook")
 	jeeck(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
         masuk = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
         if masuk == "":
