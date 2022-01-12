@@ -53,9 +53,9 @@ def __hasil_ok_cp__():
 		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input")
 # Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
-komenredem = random.choice(['Bang Lu Ngntd!', 'Bang Lu Cakep Tapi Sayang Kaya Kntl', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
-komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
-kartu2d = random.choice(["pacaran kok sama 2D\nsampah bat lu bang","waduh sampah lu bang","wibu hengker tezy","judul anime apa bang?","bjir kawai cok","bang lapor gua habis coli","neper surentod","kentod berkentod :v"])
+komenredem = random.choice(['Bang kred bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu wkwk', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
+komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar lgi ya selain dia?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
+kartu2d = random.choice(["pacaran kok cuma satu bang ","waduh ganteng lu bang","wibu hengker tezy","judul anime apa bang?","Bang emnk jago lah","bang lapor gua habis coli","mengkrend sudah","Salam dua jri poko ny bang :v"])
 def __sayang_amanda__():
     try:
         token = open('login.txt', 'r').read()
