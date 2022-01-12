@@ -91,7 +91,7 @@ def __raka_sayang_amanda__():
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Login Menggunakan Token Facebook")
 	raka("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Cara Mengambil Token Facebook")
 	raka("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Exit")
-        masuk = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Choose : \033[0;36m")
+        masuk = raw_input("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Choose : \033[0;36m")
         if masuk == "":
                 exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk Input")
         elif masuk == "1":
