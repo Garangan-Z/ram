@@ -28,12 +28,12 @@ ua = ('BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/10
 ua = ('Lenovo-A850/S105 Linux/3.4.0 Android/4.2 Release/06.12.2013 Browser/AppleWebKit534.30 Profile/ Configuration/ Safari/534.30')
 # Cek hasil okeh
 def __hasil_ok_cp__():
-	raka("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Lihat hasil ok")
-	raka(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Lihat hasil cp")
-	raka(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
-	has = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
+	raka("\n \033[0;37m[\033[0;36m1\033[0;36m]\033[0;00m Lihat hasil ok")
+	raka(" \033[0;37m[\033[0;36m2\033[0;36m]\033[0;00m Lihat hasil cp")
+	raka(" \033[0;37m[\033[0;36m3\033[0;36m]\033[0;00m Exit")
+	has = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Input : ")
 	if has == '':
-		exit(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Wronk input")
+		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 	elif has == '1':
 		hasil_ok = open('Ok.json','r').read()
 		print(hasil_ok)
@@ -45,7 +45,7 @@ def __hasil_ok_cp__():
 	elif has == '3':
 		__menu__()
 	else:
-		exit(" \033[0;36m[\033[0;35m+\033[0;36m]\033[0;00m Wronk input")
+		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 # Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
 komenredem = random.choice(['Bang Lu krend bang!', 'Bang Lu Cakep Tapi Sayang pacarnya cuma satu ?', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
