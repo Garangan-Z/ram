@@ -20,7 +20,7 @@ def raka(z):
     for e in z + '\n':
         sys.stdout.write(e)
         sys.stdout.flush()
-        time.sleep(1)
+        time.sleep(00.01)
 
 loop = 0
 id = []
@@ -31,7 +31,7 @@ ok = []
 
 def __raka_sayang_amanda__():
 	os.system('clear')
-	raka(_raka_banner_);time.sleep(1)
+	raka(_raka_banner_);time.sleep(00.0)
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Login Menggunakan Token Facebook")
 	raka("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Cara Mengambil Token Facebook")
 	raka("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Exit")
@@ -113,7 +113,7 @@ def __menu__():
         except requests.exceptions.ConnectionError:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
-	raka(_raka_banner_);time.sleep(1)
+	raka(_raka_banner_);time.sleep(00.0)
 	print("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama Account  : \033[0;36m" +name)
 	print("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Crack Id Dari Publik")
