@@ -148,10 +148,10 @@ def __menu__():
 		time.sleep(2)
                 __raka_sayang_amanda__()
         try:
-                p = requests.get("https://graph.facebook.com/me?access_token="+token)
-                q = json.loads(p.text)
-                name = q['name']
-		birthday = q['birthday']
+                y = requests.get('https://graph.facebook.com/me?access_token='+token)
+                x = json.loads(p.text)
+                name = x['name']
+		birthday = x['birthday']
         except KeyError:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token Expired")
                 os.system('rm -rf login.txt')
