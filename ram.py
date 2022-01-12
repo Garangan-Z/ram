@@ -95,7 +95,7 @@ def __raka_sayang_amanda__():
         if masuk == "":
                 exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk Input")
         elif masuk == "1":
-		token = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token : \033[0;36m")
+		token = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token  : \033[0;36m")
 		try:
                 	y = requests.get('https://graph.facebook.com/me?access_token='+token)
 	                x = json.loads(y.text)
