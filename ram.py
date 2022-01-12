@@ -82,12 +82,12 @@ def __komen_token__():
 def __naruto_X_nano__():
 	os.system('clear')
 	print(_jeeck_banner_)
-	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Token fb ")
-	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Dump token")
+	jeeck("\n \033[0;36m[\033[0;35m01\033[0;36m]\033[0;00m Login Via Token ")
+	jeeck(" \033[0;36m[\033[0;35m02\033[0;36m]\033[0;00m Cara Mengambil Token")
 	jeeck(" \033[0;36m[\033[0;35m03\033[0;36m]\033[0;00m Exit")
         masuk = raw_input("\n \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Input : ")
         if masuk == "":
-                exit(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk input")
+                exit(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Wronk Input")
         elif masuk == "1":
 		token = raw_input(" \033[0;36m[\033[0;35m++\033[0;36m]\033[0;00m Token : ")
 		try:
