@@ -167,7 +167,7 @@ def __menu__():
 	print("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Crack Id Dari Followers")
 	print("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Chek Results Crack")
 	raka("\033[0;37m[\033[0;36m0\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Remove Token")
-	_naruto_kurama_ = raw_input("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Choose : \033[0;36m")
+	_naruto_kurama_ = raw_input("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Choose : \033[0;36m")
 	if _naruto_kurama_ == "":
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input ");exit
 	elif _naruto_kurama_ == "1" or _naruto_kurama_ == "01":
