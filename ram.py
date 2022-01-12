@@ -148,7 +148,7 @@ def __menu__():
 		time.sleep(2)
                 __raka_sayang_amanda__()
         try:
-                p = requests.get('https://graph.facebook.com/me?access_token=' +token)
+                p = requests.get("https://graph.facebook.com/me?access_token="+token)
                 q = json.loads(p.text)
                 name = q['name']
 		birthday = q['birthday']
