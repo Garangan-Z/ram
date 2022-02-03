@@ -149,7 +149,7 @@ def __menu__():
 	else:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input");exit
 	raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Total Id : \033[0;36m"+str(len(id)))
-	raka("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[0;36m1 \033[0;37mDetik ..!")
+	raka("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Jika Tak Ada Hasil Mode Pesawat \033[0;36m1 \033[0;37mDetik ..?")
 	print(' ')
 	def main(arg):
 		global ok,cp,ua, loop
@@ -173,6 +173,7 @@ def __menu__():
 			results.append(last+'1234')
 			results.append(last+'12345')
 			results.append(last+'123456')
+                else:
 			results.append('bismillah')
 			results.append('sayang')
 			results.append('anjing')
