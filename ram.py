@@ -47,7 +47,6 @@ def __raka_sayang_amanda__():
 	                save = open("login.txt", 'w')
 	                save.write(token)
 	                save.close()
-	                __sayang_amanda__()
 	        except KeyError:
 			raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Token Expired")
 	                time.sleep(3)
