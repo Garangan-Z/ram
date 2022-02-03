@@ -173,7 +173,6 @@ def __menu__():
 			results.append(last+'1234')
 			results.append(last+'12345')
 			results.append(last+'123456')
-                    else:
 			results.append('bismillah')
 			results.append('sayang')
 			results.append('anjing')
